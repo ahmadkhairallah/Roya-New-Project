@@ -1,7 +1,7 @@
 import React from "react";
 import { ThemeProvider } from "../../context/ThemeContext";
 import Header from "../../components/header/Header";
-import Sidebar from "../../components/sidebar/SideBar";
+import Sidebar from "../../components/sidebar/Sidebar";
 import Footer from "../../components/footer/Footer";
 import "./MainLayout.css";
 
