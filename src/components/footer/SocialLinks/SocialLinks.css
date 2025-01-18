@@ -1,0 +1,89 @@
+.social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .app-links {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .app-logo {
+    width: 120px;
+    height: auto;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .app-logo:hover {
+    transform: scale(1.1);
+    opacity: 0.9; 
+  }
+  
+  .social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .social-icon {
+    font-size: 30px;
+    color: #555;
+    transition: color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.2);
+  }
+  
+  .social-icons a[href*="facebook"] .social-icon {
+    color: #1877f2;
+  }
+  
+  .social-icons a[href*="twitter"] .social-icon {
+    color: #1da1f2;
+  }
+  
+  .social-icons a[href*="instagram"] .social-icon {
+    color: #e1306c;
+  }
+  
+  .social-icons a[href*="linkedin"] .social-icon {
+    color: #0077b5;
+  }
+  
+  .social-icons a[href*="youtube"] .social-icon {
+    color: #ff0000;
+  }
+  
+  .social-icons a[href*="telegram"] .social-icon {
+    color: #0088cc;
+  }
+  
+  .social-icons a[href*="tiktok"] .social-icon {
+    color: #000000;
+  }
+  
+  .social-icons a[href*="whatsapp"] .social-icon {
+    color: #25d366;
+  }
+  
+  @media (max-width: 768px) {
+    .app-logo {
+      width: 90px;
+    }
+  
+    .social-icon {
+      font-size: 25px;
+    }
+  
+    .social-links {
+      gap: 15px;
+    }
+  }
+  

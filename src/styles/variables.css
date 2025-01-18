@@ -1,0 +1,27 @@
+:root {
+    /* Core Brand Colors */
+ --brand-primary-900: #0f1c3c; 
+ --brand-primary-800: #1b2c4f; 
+ --brand-primary-700: #1c2b4f;
+ --brand-primary-600: #1b2a4f;
+ --brand-primary-500: #1d3c8d;
+ --brand-primary-400: #19367f;
+ --brand-primary-300: #18347b;
+ --brand-primary-200: #389bff;
+
+ /* Background Colors */
+ --bg-color: #ededed;
+ --bg-color-secondary: #f0f0f0;
+
+ /* Neutral Colors */
+ --neutral-100: #ffffff;    
+ --neutral-200: #eeeeee;
+ --neutral-300: #d7d7d7;       
+ --neutral-400: #d6d6d6;  
+ --neutral-500: #6b758c;
+
+ /* Accent Colors */
+ --accent-red: #fc281d; 
+ --accent-red-hover: #e2180e;   
+ --accent-yellow: #f5af10;
+}

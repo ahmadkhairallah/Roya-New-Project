@@ -1,0 +1,81 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Almarai', sans-serif;
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    font-size: 16px;
+    font-display: swap;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    font-family: 'Almarai', sans-serif;
+    border: none;
+    cursor: pointer;
+}
+
+
+:root {
+    --bg-color: var(--bg-color-secondary); 
+    --text-color: #000000; 
+    --brand-primary-900: #0f1c3c; 
+    --neutral-100: #ffffff; 
+    --neutral-700: #333333;
+}
+  
+/* Dark mode styles */
+[data-theme="dark"] {
+    --bg-color: var(--brand-primary-900); /* Background color in dark mode */
+    --text-color: var(--neutral-100); /* Text color in dark mode */
+}
+  
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Almarai', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Make icons white in dark mode */
+[data-theme="dark"] .icon {
+    color: var(--neutral-100);
+}
+  
+/* Make text white in dark mode */
+[data-theme="dark"] .site-name,
+[data-theme="dark"] .icon-wrapper {
+    color: var(--neutral-100);
+}
+
+/* Mobile Experience */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    body {
+        font-size: 15px;
+    }
+}

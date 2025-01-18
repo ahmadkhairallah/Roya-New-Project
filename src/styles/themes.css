@@ -1,0 +1,19 @@
+/* Day mode */
+:root {
+    --bg-color: var(--bg-color-secondary); /* Default background color */
+    --text-color: #000000; /* Default text color */
+    --brand-primary-900: #0f1c3c; /* Background color in dark mode */
+    --neutral-100: #ffffff; /* Text color in dark mode */
+    --neutral-700: #333333; /* Text color in day mode */
+}
+
+/* Dark mode */
+[data-theme="dark"] {
+    --neutral-100: #e0e0e0;
+    --neutral-200: #4a4a4a;
+    --neutral-300: #666666;
+    --neutral-700: #2a2a2a;
+    --neutral-900: #121212;
+    --brand-primary-500: #1e90ff;
+    --brand-primary-700: #104f8b;
+}

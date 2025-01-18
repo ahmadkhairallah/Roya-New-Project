@@ -1,0 +1,172 @@
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 28px;
+  background-color: var(--neutral-100);
+  color: var(--text-color);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+[data-theme="dark"] .main-header {
+  background-color: var(--brand-primary-900);
+}
+
+.main-header-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.main-header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  height: 55px;
+}
+
+.site-name {
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--brand-primary-700);
+}
+
+.icon-wrapper {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.icon {
+  font-size: 22px;
+  color: var(--text-color);
+  transition: transform 0.5s ease, opacity 0.5s ease, color 0.5s ease;
+}
+
+.icon-wrapper.dark-mode-toggle {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+
+.icon-wrapper.dark-mode-toggle .icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.icon-wrapper.dark-mode-toggle .icon.fa-sun {
+  opacity: 1;
+  transform: translate(-50%, -50%) rotate(0deg);
+  filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.7));
+}
+
+.icon-wrapper.dark-mode-toggle .icon.fa-moon {
+  opacity: 0;
+  transform: translate(-50%, -50%) rotate(90deg);
+  color: #ffffff;
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.7));
+}
+
+.icon-wrapper.dark-mode-toggle.active .icon.fa-sun {
+  opacity: 0;
+  transform: translate(-50%, -50%) rotate(-180deg);
+  filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.5));
+}
+
+.icon-wrapper.dark-mode-toggle.active .icon.fa-moon {
+  opacity: 1;
+  transform: translate(-50%, -50%) rotate(0deg);
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+}
+
+@media (max-width: 1024px) {
+  .main-header {
+    padding: 10px;
+  }
+
+  .logo {
+    height: 35px;
+  }
+
+  .site-name {
+    font-size: 18px;
+  }
+
+  .icon {
+    font-size: 18px;
+  }
+
+  .main-header-left {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .main-header {
+    gap: 10px;
+    padding: 10px;
+  }
+
+ 
+  .main-header-right {
+    margin-right: 50px;
+  }
+
+  .logo {
+    height: 30px;
+  }
+
+  .site-name {
+    font-size: 16px;
+  }
+
+  .icon {
+    font-size: 16px;
+  }
+
+  .main-header-left {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-header {
+    padding: 8px;
+  }
+
+  .logo-container {
+    gap: 10px;
+  }
+
+  .logo {
+    height: 25px;
+  }
+
+  .site-name {
+    font-size: 14px;
+  }
+
+  .icon {
+    font-size: 14px;
+  }
+
+  .main-header-left {
+    gap: 8px;
+  }
+}
